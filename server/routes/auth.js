@@ -1,11 +1,9 @@
-import express from ("express");
+const express = require("express");
+const router = express.Router();
 
-const router = express.Router()
+//import from controllers
+const { register } = require("../controllers/auth");
 
-router.get("/api/register", (req, res) => {
-  res.json({
-    data: "you hit register endpoint",
-  });
-});
+router.get("/register", register);
 
 module.exports = router;
