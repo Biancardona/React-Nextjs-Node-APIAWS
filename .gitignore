@@ -43,3 +43,5 @@ db.json
 
 #next files
 .next
+
+.env
